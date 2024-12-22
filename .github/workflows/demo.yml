@@ -40,7 +40,7 @@ jobs:
       - name: Get the code from artifact
         uses: actions/upload-artifact@v3
         with:
-          path: dist-files
+          name: dist-files
       - name: Output Content
         run: ls
       - name: Deploy

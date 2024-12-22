@@ -2,7 +2,6 @@ name: Deploy website
 on:
   push:
     branches:
-      - main
       - master
 jobs:
   test:
@@ -28,7 +27,7 @@ jobs:
         run: npm run build
       - name: Upload into Artifactory
         uses: actions/upload-artifact@v3
-        with: !
+        with:
           name: dist-files
           path: |
             dist

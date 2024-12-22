@@ -38,9 +38,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Get the code from artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v3
         with:
-          name: dist-files
+          path: dist-files
       - name: Output Content
         run: ls
       - name: Deploy
